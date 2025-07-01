@@ -1,0 +1,17 @@
+[project]
+name = "testenv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.3.1",
+    "pyqt6>=6.9.1",
+    "pyqtgraph>=0.13.7",
+    "sensirion-shdlc-driver",
+    "sensirion-shdlc-sfc5xxx",
+]
+
+[tool.uv.sources]
+sensirion-shdlc-driver = { git = "https://github.com/Sensirion/python-shdlc-driver" }
+sensirion-shdlc-sfc5xxx = { git = "https://github.com/Sensirion/python-shdlc-sfc5xxx" }
