@@ -226,7 +226,7 @@ class MainWindow(QMainWindow):
         filename = self.get_log_filename()
         file_exists = os.path.isfile(filename)
         try:
-            with open(filename, 'a', newline='', encoding='utf-8') as f:
+            with open(f'log/{filename}', 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 if not file_exists:
                     writer.writerow(
